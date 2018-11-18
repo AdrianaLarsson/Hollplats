@@ -28,7 +28,7 @@
 
 </hbarkaraby>
 
-
+<!--- vanster är en div så jag kan dela upp sidan lättare och sätta sakena lättare vart jag vil ha dem --->
 
 <div class="vanster">
     <body onload="changeTime()">
@@ -40,14 +40,19 @@
     </div>
           
     
-
+<!--- chatt pop upp till höger --->
 
     <button class="open-button" onclick="oF()">Chat</button>
 
     <div class="chat-popup" id="pop">
       <form action="/action_page.php" class="form-container">
-        <div class="Meddlande"></div>>
-        <label for="msg"><b>Message</b></label>
+        <div class="Meddlande"></div>
+        <label for="msg">För att kontakta mig</b>
+          <br>
+        Telnummer: 0730626568</label>
+        <br>
+        eller
+        <br>
         <textarea placeholder="Skriv ditt meddelande här.." name="msg" required></textarea>
     
         <button type="submit" class="btn">Skicka</button>
@@ -61,18 +66,6 @@
 
 
 
-    <form name="stationer">
-
-        <select name="stationval" id="val">
-            <option value="inget" selected="selected">Välj din Station</option>
-         
-            <option value ="index.html">Barkarby station</option>
-            <option value ="liljeh.html"> Liljeholmen Tunnelbana<option>
-            <option value ="#">Stockholm City<option>
-      
-        </select>
-      </form>
-
 
 
      <!-- <div class="timer">
@@ -85,6 +78,19 @@
 <div class="center">
 
 
+ 
+<!--- val av station--->
+<form name="stationer">
+
+  <select name="stationval" id="val">
+      <option value="inget" selected="selected">Välj din Station</option>
+   
+      <option value ="index.html">Barkarby station</option>
+      <option value ="liljeh.html"> Liljeholmen Tunnelbana<option>
+      <option value ="#">Stockholm City<option>
+
+  </select>
+</form>
     
   
     <ul id="departures">Pendeltåg<br><br></ul><br>
@@ -93,7 +99,6 @@
     <p id="demo3"></p></div>
 
 
- 
       
 
 
@@ -146,7 +151,7 @@
 
 
  
-     //öppna ned knapp, funktion
+     //öppna ned knapp, funktion block så den inte öppnas utan man har tryckt på öppna chatt
      function oF() {
     document.getElementById("pop").style.display = "block";
  }// stänga ned knapp, funktion
@@ -163,7 +168,7 @@
 
 
        
-   
+   // pendeltåg
   
   function createNode(element) {
           return document.createElement(element);
@@ -423,47 +428,47 @@ function tid(tabell)
 
        
             case 5:
-            level = "min pring!";
+            level = " min pring!";
             break;
             case 7:
-            level = "gå ut NU ";
+            level = " gå ut NU ";
             break;
               case 6:
-            level = "m GÅ";
+            level = " m GÅ";
             break;
 
             case 9:
             level = " minuter Adriana ";
             break;
-            case "8":
-            level = "minuter, ditt gmla turnummer";
+            case 8:
+            level = " minuter, ditt gmla turnummer";
             break;
             case 10:
-            level = "börja klä på dig!";
+            level = " börja klä på dig!";
             break;
             case 11:
             level = " Elva minuter ";
             break;
             case 12:
-            level = "gör dig ordning!";
+            level = " gör dig ordning!";
             break;
             case 13:
             level = " God jul ";
             break;
             case 14:
-            level = "m på dig";
+            level = " m på dig";
             break;
             case 15:
-            level = "minuter";
+            level = " minuter";
             break;
             case 16:
             level = " m";
             break;
             case 17:
-            level = "minuter";
+            level = " minuter";
             break;
-            case "18 min":
-            level = "18, gott om tid på dig!";
+            case 18:
+            level = " gott om tid på dig!";
             break;
             case 19:
             level = " m";

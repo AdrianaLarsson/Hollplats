@@ -4,8 +4,7 @@ padding: 0px;
  
 }
 
-
-
+/*linear gradient gör såa att man kan ha olika färger på backgrunden */
 body{
 
    background-image: linear-gradient(to right, rgb(159, 228, 255) , rgb(0, 101, 253), rgb(0, 44, 139), rgb(143, 229, 255));
@@ -13,6 +12,8 @@ body{
 }
 
 h1{
+
+  /* här är headern */
     
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
@@ -38,7 +39,7 @@ h2{
     
 
 
-
+/* heder som div så jag kan dela upp sidan i sektioner och lättare att veta vart allt är och sätta allt på rätt plats */
 .header{
 
 
@@ -55,11 +56,15 @@ background-size: cover;
 
 
 }
+
+/* här har jag bilden som blir lite i bakgrunden cover är att bilden appassar sig så att den ändrar storlek beroende på hur sidan är och stor widht och heigt
+sätter bilden på no repeat så det inte blir två bilder av samma. har fixa så jag kan skriva på bilden, så att bilden
+blir mer i bakgrunden med linear gradient på bilden */
 .center {
   margin: auto;
   width: 60%;
   background: linear-gradient(rgba(171, 255, 238, 0.7), rgba(95, 60, 255, 0.7)), url(train.jpg); height: 45vw; width: 90%;
-   background-repeat: no-repeat; background-image: -moz-element();background-size: cover;
+   background-repeat: no-repeat; background-size: cover;
 
   padding: 10px;
 margin-top: 10px;
@@ -67,15 +72,17 @@ margin-bottom: 10px;
 border-radius: 50px;
 }
 
-
+/*
 form {
 
   float: right;
 margin-top: -5vw;
   margin-right: 2vw;
- 
+
   
     }
+
+
     input {
       
 width: 100%;
@@ -137,7 +144,9 @@ padding-left: 45px;
                                                     padding-top: 10vw;
                                                               
                                                                 }
-                                           
+ */
+
+       /* tågen färg storlek på texten position tjocklek på texten och hur den ska se ut */                                    
        ul{
          color: rgb(255, 255, 255);
 text-align: center;
@@ -157,6 +166,8 @@ font-weight: bold;
 text-align: justify;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        } 
+
+       /* bussarna, sorlek på texten och tjocklek, position, färg*/
        #buss {
          
         float:left;
@@ -176,16 +187,18 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
       #tunnelbana {
 
-        margin: 10px;
+        margin: 5px;
 font-size: 3vw;
+
+/* så det inte blir några punkter*/
 list-style-type: none;
 color: black;
 font-weight: 900;
-text-decoration-style: wavy;
+
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       } 
 
-
+/* klockan utseende och box, timme minut och sekund*/
       #timme{
 
   float: left;
@@ -214,23 +227,24 @@ font-size: 5vw;
         font-size: 5vw;
       }  
 
-
+      /* kartans utsende och storlek*/
        #map {
+         border: 20px solid rgb(46, 48, 112);
+         box-shadow: 0 0 10ch;
          float: center;
         height: 40vw;
-        width: 70vw;
-        margin-left: 13vw;
-        border-radius: 110vw;
+        width: 85vw;
+        margin-left: 5vw;
+        border-radius: 100vw;
       }
-    
+    /* val av din station, utessende storlek box radius färg text position*/
   #val{
-    float: right;
+    float: left;
 width: 20vw;
 padding: 1vw;
 margin-top:-7vw;
 margin-bottom: -15% ; 
-
-margin-left: 72vw;
+margin-left: 38vw;
 border-radius: 50px;
 text-align: center; color: rgb(0, 0, 0);
 font-size: 2vw;
@@ -239,12 +253,7 @@ box-shadow:  0 0 10vw;
 
     }   
     
-    #mapprofil {
-      height: 400px;
-      width: 100%;
-    }
-
-
+ 
 
     .timer {
      float: center;
@@ -255,17 +264,20 @@ box-shadow:  0 0 10vw;
      color: rgb(12, 22, 56);
 text-shadow:  1px 1px rgb(109, 114, 145);
     }
+
+/* upp och ner position av klockan*/
+
     .klockan{
       margin-top: -4vw;
       margin-bottom: 10vw;
       
     }
 
-   
+   /* val av gånväg på kartan, utseende position färg text*/
     #panel{
    float:center;
    margin-right: 10vw;
-  
+  /* startval av gånväg på kartan, utseende position färg text*/
     }
     #start{
       float:rig;
@@ -278,7 +290,7 @@ text-shadow:  1px 1px rgb(109, 114, 145);
       background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
       box-shadow:  0 0 5ch;
        }
-   
+     /* slutval av gånväg på kartan, utseende position färg text*/
        #end{
         float: right;
         margin-left: 10vw;
@@ -292,12 +304,14 @@ text-shadow:  1px 1px rgb(109, 114, 145);
            box-shadow:  0 0 5ch;
          }
      
-    
+
+         /* texten på din gånväg */
          .vag{
-          float:left;
-          margin-right: 1.5vw;
+    font-size: 25px;
+  
              
            }
+      
        
       
 /* chatt öppna knappen */
@@ -307,36 +321,33 @@ text-shadow:  1px 1px rgb(109, 114, 145);
   color: rgb(0, 0, 0);
   font-size: 3.5vw;
   padding: 10px 23px;
-  border: none;
-  cursor: pointer;
-
   position: fixed;
   bottom: 23px;
   right: 30px;
-  width: 280px;
+  width: 300px;
 }
-
-
+/* chatt popup knappen */
 .chat-popup {
   background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
-
   display: none;
   position: fixed;
   bottom: 0;
   right: 10px;
   border: 3px solid #f1f1f1;
-  z-index: 9;
+
 }
 
+/* storlek på container(bakgrunden) på chatt*/
+
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+  max-width: 350px;
+  padding: 20px;
+  background-color: rgb(255, 247, 247);
 }
 
 
 .form-container textarea {
-  width: 100%;
+  width: 300px;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -348,7 +359,8 @@ text-shadow:  1px 1px rgb(109, 114, 145);
 
 .form-container textarea:focus {
   background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
-  outline: none;
+  width: 200px;
+
 }
 
 
@@ -357,7 +369,7 @@ text-shadow:  1px 1px rgb(109, 114, 145);
   color: rgb(0, 0, 0);
   padding: 16px 20px;
 font-size: 2vw;
-  cursor: pointer;
+
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
@@ -368,7 +380,7 @@ font-size: 2vw;
 background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
 }
 
-/* om man dar mupekarn över knappen så blir det en ändring */
+/* om man dar muspekarn över knappen så blir det en ändring */
 .form-container .btn:hover, .open-button:hover {
   opacity: 5;
 }

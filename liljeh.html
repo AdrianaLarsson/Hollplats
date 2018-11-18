@@ -32,17 +32,7 @@
 
       <div id="timme">00</div><div id="minut">00</div><div id="secund">00</div>
    
-    <!---Länkar till barkarby station och till tunnelbanan i lijeholmen, val meny-->
-    <form name="stationer">
-    <select name="stationval" id="val">
-        <option value="inget" selected="selected">Välj din Station</option>
-        <option value ="#">Stockholm City<option>
-        <option value ="index.html">Barkarby station</option>
-        <option value ="liljeh.html"> Liljeholmen Tunnelbana<option>
-        
-      
-    </select>
-  </form>
+>
 
 
   
@@ -64,11 +54,22 @@
 
       <div class="center">
 
-         
+             <!---Länkar till barkarby station och till tunnelbanan i lijeholmen, val meny-->
+    <form name="stationer">
+      <select name="stationval" id="val">
+          <option value="inget" selected="selected">Välj din Station</option>
+          <option value ="#">Stockholm City<option>
+          <option value ="index.html">Barkarby station</option>
+          <option value ="liljeh.html"> Liljeholmen Tunnelbana<option>
+          
+        
+      </select>
+    </form>
+
+
+
             <ul id="tunnelbana"></ul>
 
-            
-      
                   </div>
                 
                   <div id="demo">
@@ -114,7 +115,7 @@
   <script language="javascript">
 
  
-
+//tunnelbana
   function createNode(element) {
       return document.createElement(element);
     }
@@ -158,7 +159,21 @@
       });
 
 
-// Kod för mapp!!
+
+
+// laddar om sidan
+setTimeout(function(){
+  window.location.reload(1);
+},100000);
+
+
+
+
+
+
+
+
+// Kod för karta!!
 
     //kod för map och gånvägen, visar med marker och gånväg
     function initMap() {
@@ -281,6 +296,7 @@ window.open(ValavAnv.value, " Hej hopp","");
 
 
 
+// switch case så jag kan ändra min egen text efter siifrrna med avgstid
 var dt;
 var dt = dt;
 
