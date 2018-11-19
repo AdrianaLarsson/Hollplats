@@ -32,9 +32,28 @@
 
       <div id="timme">00</div><div id="minut">00</div><div id="secund">00</div>
    
->
 
 
+      <button class="open-button" onclick="oF()">Chat</button>
+
+      <div class="chat-popup" id="pop">
+        <form action="/action_page.php" class="form-container">
+          <div class="Meddlande"></div>
+          <label for="msg">För att kontakta mig</b>
+            <br>
+          Telnummer: 0730626568</label>
+          <br>
+          eller
+          <br>
+          <textarea placeholder="Skriv ditt meddelande här.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Skicka</button>
+          <button type="button" class="btn cancel" onclick="cF()">Stäng chatt</button>
+        </form>
+      </div>
+      
+      
+  
   
  
 
@@ -113,6 +132,25 @@
      
 
   <script language="javascript">
+
+
+
+
+     //öppna ned knapp, funktion block så den inte öppnas utan man har tryckt på öppna chatt
+     function oF() {
+    document.getElementById("pop").style.display = "block";
+ }// stänga ned knapp, funktion
+
+ function cF() {
+     document.getElementById("pop").style.display = "none";
+ }
+
+
+
+
+
+
+
 
  
 //tunnelbana
@@ -296,7 +334,7 @@ window.open(ValavAnv.value, " Hej hopp","");
 
 
 
-// switch case så jag kan ändra min egen text efter siifrrna med avgstid
+// switch case så jag kan ändra min egen text efter siifrrna med avgstid och text
 var dt;
 var dt = dt;
 
