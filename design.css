@@ -187,8 +187,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
       #tunnelbana {
 
-        margin: 3px;
-font-size: 2.5vw;
+        margin: 1px;
+        margin-top: -1px;
+font-size: 2.3vw;
 
 /* så det inte blir några punkter*/
 list-style-type: none;
@@ -308,13 +309,13 @@ text-shadow:  1px 1px rgb(109, 114, 145);
          /* texten på din gånväg */
          .vag{
     font-size: 25px;
-  
+  margin-right: 4px; 
              
            }
       
        
       
-/* chatt öppna knappen */
+/* chatt öppna knappen utseende position storlek text */
 .open-button {
   background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
   box-shadow: 5cm;
@@ -326,13 +327,13 @@ text-shadow:  1px 1px rgb(109, 114, 145);
   right: 30px;
   width: 300px;
 }
-/* chatt popup knappen */
+/* chatt popup knappen position hur den ska vara och utseeende */
 .chat-popup {
   background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 10px;
+  margin-bottom: 20vw;
+  right: 1px;
   border: 3px solid #f1f1f1;
 
 }
